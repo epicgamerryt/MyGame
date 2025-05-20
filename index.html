@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <title>Single‐Player Texas Hold'em</title>
+</head>
+<body>
+  <div class="table-container">
+    <!-- Dealer button indicator -->
+    <div id="dealer-button"></div>
+
+    <!-- CPU Seats (Top, Left, Right, and Upper‐Left, Upper‐Right) -->
+    <div class="seat cpu" id="cpu-1">
+      <div class="player-name">CPU 1</div>
+      <div class="cards">
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="chip-count" id="chips-cpu-1">—</div>
+    </div>
+    <div class="seat cpu" id="cpu-2">
+      <div class="player-name">CPU 2</div>
+      <div class="cards">
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="chip-count" id="chips-cpu-2">—</div>
+    </div>
+    <div class="seat cpu" id="cpu-3">
+      <div class="player-name">CPU 3</div>
+      <div class="cards">
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="chip-count" id="chips-cpu-3">—</div>
+    </div>
+    <div class="seat cpu" id="cpu-4">
+      <div class="player-name">CPU 4</div>
+      <div class="cards">
+        <div class="card back"></div>
+        <div class="card back"></div>
+      </div>
+      <div class="chip-count" id="chips-cpu-4">—</div>
+    </div>
+
+    <!-- Community Cards in the center -->
+    <div class="community-area">
+      <div class="card-slot" id="comm-1"></div>
+      <div class="card-slot" id="comm-2"></div>
+      <div class="card-slot" id="comm-3"></div>
+      <div class="card-slot" id="comm-4"></div>
+      <div class="card-slot" id="comm-5"></div>
+    </div>
+
+    <!-- Pot Display -->
+    <div class="pot-display">
+      Pot: <span id="pot-amount">0</span>
+    </div>
+
+    <!-- Human Seat (Bottom) -->
+    <div class="seat human" id="human-seat">
+      <div class="player-name">You</div>
+      <div class="cards">
+        <div class="card" id="player-card-1"></div>
+        <div class="card" id="player-card-2"></div>
+      </div>
+      <div class="chip-count" id="chips-you">—</div>
+    </div>
+  </div>
+
+  <!-- Action Buttons Area -->
+  <div class="action-area">
+    <button id="btn-fold" class="action-btn" disabled>Fold</button>
+    <button id="btn-call" class="action-btn" disabled>Call</button>
+    <button id="btn-raise" class="action-btn" disabled>Raise</button>
+    <input
+      type="number"
+      id="raise-amount"
+      class="raise-input"
+      min="1"
+      placeholder="amt"
+      disabled
+    />
+  </div>
+
+  <!-- “Deal New Hand” button -->
+  <div class="deal-area">
+    <button id="btn-deal">Deal New Hand</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
