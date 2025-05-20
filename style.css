@@ -61,4 +61,23 @@ body {
   font-size: 16px;
   cursor: pointer;
   user-select: none;
+  /* box-sizing: border-box; */
+}
+
+.red-suit {
+  color: red;
+}
+
+.card.selected {
+  border: 2px solid red;
+  padding: 3px 6px;
+}
+
+#playBtn {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
 }
