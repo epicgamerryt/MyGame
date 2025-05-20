@@ -50,3 +50,15 @@ body {
   color: white;
   font-size: 20px;
 }
+
+.card {
+  display: inline-block;
+  margin: 2px;
+  padding: 5px 8px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+}
